@@ -1,5 +1,5 @@
 :root {
-  /* Step 1: Define the colors */
+  /* Define the colors */
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
@@ -7,11 +7,13 @@
   --color-body: #918ca4;
 }
 
+/* == Typography == */
 html {
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
 }
 
+/* Mobile first approach */
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
@@ -42,6 +44,7 @@ p {
   margin-top: 0;
 }
 
+/* Media query for desktop: Typography */
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
@@ -57,5 +60,34 @@ p {
 
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+/* == Links == */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-style: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+/* Media query for desktop: Links */
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
