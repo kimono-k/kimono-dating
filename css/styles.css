@@ -259,7 +259,7 @@ a {
   color: #cdcbd7;
 }
 
-/* Media query for desktop: Input */
+/* Media query for desktop: Inputs */
 @media screen and (min-width: 1024px) {
   .input {
     font-size: 1.5rem;
