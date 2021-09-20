@@ -440,3 +440,22 @@ a {
     font-size: 1.6rem;
   }
 }
+
+/* Grids mobile */
+.grid {
+  display: grid;
+}
+
+/* Media query for tablets: Grids */
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr); /* Slice columns in 2 */
+  }
+}
+
+/* Media query for PC's and laptops: Grids */
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr); /* Slice columns in 3 */
+  }
+}
