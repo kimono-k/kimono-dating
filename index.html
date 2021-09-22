@@ -15,47 +15,62 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section class="block">
-      <header class="block__header">
-        <h2>What our Users are saying</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, ea?
-        </p>
-      </header>
-      <div class="container">
-        <div class="card testimonial">
-          <div class="grid grid--1x2">
-            <div class="testimonial__image">
-              <img
-                src="images/stevie-testimonial.jpg"
-                alt="A happy, smiling customer"
-              />
-              <span class="icon-container icon-container--accent">
-                <svg class="icon icon--white icon--small">
-                  <use xlink:href="images/sprite.svg#quotes"></use>
-                </svg>
-              </span>
-            </div>
-            <blockquote class="quote">
-              <p class="quote__text">I'm <del>un</del>happy.</p>
-              <footer>
-                <div class="media">
-                  <div class="media__image">
-                    <svg class="icon icon--primary quote__line">
-                      <use xlink:href="images/sprite.svg#line"></use>
-                    </svg>
-                  </div>
-                  <div class="media__body">
-                    <h3 class="media__title quote__author">Stevie Lulofs</h3>
-                    <p class="quote__organization">Coolblue</p>
-                  </div>
-                </div>
-              </footer>
-            </blockquote>
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Legal</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+              </svg>
+            </span>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Conditions</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
           </div>
-        </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Careers</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+              </svg>
+            </span>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Internships</a></li>
+              <li><a href="#">Charity Work</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Social</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+              </svg>
+            </span>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__brand">
+          <img src="images/kimono-dating-logo.png" alt="">
+          <div class="footer__copyright">&copy; 2021 Kimono Dating. All Rights Reserved.</div>
+        </section>
       </div>
-    </section>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
