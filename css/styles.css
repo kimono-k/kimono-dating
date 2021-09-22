@@ -3,6 +3,7 @@
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
+  --color-call-to-action: rgb(34, 187, 72);
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
@@ -153,6 +154,7 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
+  margin-left: 4rem;
 }
 
 .list--inline .list__item {
@@ -249,6 +251,11 @@ a {
 
 .btn--secondary:hover {
   background: #00c8eb;
+}
+
+.btn--call-to-action {
+  background: var(--color-call-to-action);
+  color: #fff;
 }
 
 .btn--accent {
@@ -561,6 +568,11 @@ a {
 
 .callout--primary {
   background: var(--color-primary);
+  color: #fff;
+}
+
+.callout--accent {
+  background: var(--color-accent);
   color: #fff;
 }
 
